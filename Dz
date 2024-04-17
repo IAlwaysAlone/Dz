@@ -1,0 +1,15 @@
+function setPositionAbsolute(element) {
+element.style.position = "absolute";
+}
+else {
+  for (let i = 0; i < 3; i++) {
+    if (i === rand) {
+      if (Math.random() < 0.5) {
+        createCoin(new BABYLON.Vector3((i * 2) - 2, 1, 3 + zPos));
+      } else {
+        continue;
+      }
+    }
+    createBox((i * 2) - 2, zPos);
+  }
+}
